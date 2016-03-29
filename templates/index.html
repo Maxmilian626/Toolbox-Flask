@@ -1,0 +1,16 @@
+<!doctype html>
+<title>SoftDesForm</title>
+<h1>Hello!</h1>
+{% if name and age and ninja %}
+	<h1>Hello {{ name }} {{  age  }} Favorite Ninja: {{  ninja  }}!</h1>
+{% else %}
+<form action = "/login" method="post">
+	Name:<br>
+	<input type="text" name="name"><br>
+	Age:<br>
+	<input type="text" name="age">
+	Favorite SoftDes Ninja:<br>
+	<input type="text" name="ninja">
+	<input type="submit" value="Submit">
+</form>
+{% endif %}
